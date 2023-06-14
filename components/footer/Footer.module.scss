@@ -1,0 +1,15 @@
+.socials {
+    font-size: 1rem;
+}
+
+.socials__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--txt-2);
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid var(--txt-0);
+    border-radius: 8px;
+    cursor: pointer;
+}
