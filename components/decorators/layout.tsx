@@ -1,4 +1,3 @@
-import './globals.css'
 import { Noto_Sans, Caveat_Brush } from 'next/font/google'
 
 const noto = Noto_Sans({
@@ -13,12 +12,7 @@ const caveat = Caveat_Brush({
   subsets: ['latin-ext']
 })
 
-export const metadata = {
-  title: 'fe-task',
-  description: 'Task for frontend development position in RatePunk',
-}
-
-export default function RootLayout({
+export default function Layout({
   children,
 }: {
   children: React.ReactNode

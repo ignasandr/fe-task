@@ -14,9 +14,9 @@ pnpm dev
 ## Run storybook (separate components with documentation)
 
 ```bash
-npm storybook run
+npm run storybook
 # or
-yarn storybook run
+yarn run storybook
 # or
-pnpm storybook run
+pnpm run storybook
 ```
