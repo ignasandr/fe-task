@@ -1,35 +1,26 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import Layout from '../decorators/layout';
 
-import SocIcon from './SocIcon';
+import Contact from './Contact';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
-const meta: Meta<typeof SocIcon> = {
-  title: 'Footer/Social/SocIcon',
-  component: SocIcon,
-  tags: ['autodocs'],
+const meta: Meta<typeof Contact> = {
+  title: 'Footer/Contacts/Contact',
+  component: Contact,
   decorators: [
     (Story) => 
     <Layout>
       <Story />
     </Layout>
   ],
-  argTypes: {
-    sn: {
-        control: {
-            type:'select',
-            options: [ 'ig', 'fb', 'li', 'tw', 'tt' ]
-        }
-    }
-  }
+  // argTypes: {
+  // }
 };
 
 export default meta;
-type Story = StoryObj<typeof SocIcon>;
+type Story = StoryObj<typeof Contact>;
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default: Story = {
-  args: {
-    sn: 'ig',
-  },
+  args: {},
 };

@@ -1,8 +1,59 @@
-.socials {
-    font-size: 1rem;
+.footer__section {
+    h4 {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
 }
 
-.socials__icon {
+.about {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about__desc {
+    margin-top: 2rem;
+}
+
+.about__caption {
+    color: var(--txt-3);
+}
+
+.qlinks {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.qlink__item {
+    text-transform: capitalize;
+    transition: color 0.3s ease-in-out;
+}
+
+.qlink__item:hover {
+    color: var(--txt-2);
+}
+
+.qlink__accent {
+    color: var(--txt-2);
+}
+
+.contact__item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.social__icon {
     display: flex;
     justify-content: center;
     align-items: center;

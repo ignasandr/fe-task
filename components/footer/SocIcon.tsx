@@ -27,7 +27,7 @@ export default function SocIcon({ sn }: { sn: 'ig' | 'fb' | 'li' | 'tw' | 'tt' }
     }
 
   return (
-    <button className={styles.socials__icon}>
+    <button className={styles.social__icon}>
         <Icon />
     </button>
   )
