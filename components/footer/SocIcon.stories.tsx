@@ -1,17 +1,24 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import Layout from '../decorators/layout';
+import styles from './Footer.module.scss';
 
 import SocIcon from './SocIcon';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 const meta: Meta<typeof SocIcon> = {
-  title: 'StoreLinks/StoreLinkItem',
+  title: 'Footer/Social/SocIcon',
   component: SocIcon,
   tags: ['autodocs'],
   decorators: [
     (Story) => 
     <Layout>
-      <Story />
+      <div className={styles.footer}>
+        <div className={styles.content}>
+          <div className={styles.social}>
+            <Story />
+          </div>
+        </div>
+      </div>
     </Layout>
   ],
   argTypes: {

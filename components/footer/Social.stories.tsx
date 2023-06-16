@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import Layout from '../decorators/layout';
+import styles from './Footer.module.scss';
 
 import Social from './Social';
 
@@ -11,7 +12,11 @@ const meta: Meta<typeof Social> = {
   decorators: [
     (Story) => 
     <Layout>
-      <Story />
+      <div className={styles.footer}>
+        <div className={styles.content}>
+          <Story />
+        </div>
+      </div>
     </Layout>
   ],
   // argTypes: {

@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import Layout from '../decorators/layout';
+import styles from './StoreLinks.module.scss';
 
 import StoreReviews from './StoreReviews';
 
@@ -7,13 +8,16 @@ import StoreReviews from './StoreReviews';
 const meta: Meta<typeof StoreReviews> = {
   title: 'Store Links/StoreReviews',
   component: StoreReviews,
-  tags: ['autodocs'],
   decorators: [
     (Story) => 
     <Layout>
-      <div style={{ width: 'fit-content', padding: 50, background: '#45565E' }}>
-        <Story />
+      {/* <div style={{ width: 'fit-content', padding: 50, background: '#45565E' }}> */}
+      <div className={styles.section}>
+        <div className={styles.content}>
+          <Story />
+        </div>
       </div>
+      {/* </div> */}
     </Layout>
   ],
 };

@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import Layout from '../decorators/layout';
+import styles from './Footer.module.scss';
 
 import ContactItem from './ContactItem';
 
@@ -10,7 +11,13 @@ const meta: Meta<typeof ContactItem> = {
   decorators: [
     (Story) => 
     <Layout>
-      <Story />
+      <div className={styles.footer}>
+        <div className={styles.content}>
+          <div className={styles.contact}>
+            <Story />
+          </div>
+        </div>
+      </div>
     </Layout>
   ],
   // argTypes: {

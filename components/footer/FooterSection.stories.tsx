@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import Layout from '../decorators/layout';
+import styles from './Footer.module.scss';
 
 import FooterSection from './FooterSection';
 
@@ -11,7 +12,11 @@ const meta: Meta<typeof FooterSection> = {
   decorators: [
     (Story) => 
     <Layout>
-      <Story />
+      <div className={styles.footer}>
+        <div className={styles.content}>
+          <Story />
+        </div>
+      </div>
     </Layout>
   ],
 };
@@ -22,7 +27,7 @@ type Story = StoryObj<typeof FooterSection>;
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default: Story = {
   args: {
-    title: 'quick links',
+    title: 'footer section',
     children: [
       <p>Child1</p>,
       <p>Child2</p>,

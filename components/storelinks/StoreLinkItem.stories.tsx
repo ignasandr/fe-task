@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import Layout from '../decorators/layout';
+import styles from './StoreLinks.module.scss';
 
 import StoreLinkItem from './StoreLinkItem';
 
@@ -11,8 +12,12 @@ const meta: Meta<typeof StoreLinkItem> = {
   decorators: [
     (Story) => 
     <Layout>
-      <div style={{ width: 'fit-content', padding: 50, background: '#45565E' }}>
-        <Story />
+      <div className={styles.section}>
+        <div className={styles.content}>
+          <div className={styles.links}>
+            <Story />
+          </div>
+        </div>
       </div>
     </Layout>
   ],
