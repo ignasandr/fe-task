@@ -7,7 +7,7 @@ export default function ContactItem() {
     const size = 16;
 
     return (
-        <div className={styles.contact__item}>
+        <div className={styles.item}>
             <Image src={email} alt="email" width={size} height={size}/>
             <a href="mailto:hi@ratepunk.com">
                 hi@ratepunk.com

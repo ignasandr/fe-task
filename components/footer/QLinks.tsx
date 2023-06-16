@@ -26,9 +26,9 @@ const quickLinks: { label: string, href: string, accent?: boolean }[] = [
   },
 ]
 
-export default function Social() {
+export default function QLinks() {
   return (
-    <FooterSection title='quick links'>
+    <FooterSection title='quick links' area={'qlinks'}>
       <ul className={styles.qlinks}>
         { quickLinks.map(quickLink => {
           return (

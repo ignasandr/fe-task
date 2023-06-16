@@ -9,6 +9,8 @@
   --bg-2: #45565E;
   --bg-4: #F8F4F9;
 
+  --content-width: 70rem; 
+
   font-family: var(--font-body);
 }
 
@@ -28,6 +30,12 @@ body {
 body {
   color: var(--txt-0);
   background-color: var(--bg-0);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 a {

@@ -28,7 +28,7 @@ const socialLinks: { sn: 'ig' | 'fb' | 'li' | 'tw' | 'tt', href: string }[] = [
 
 export default function Social() {
   return (
-    <FooterSection title='social'>
+    <FooterSection title='social' area={'social'}>
       <ul className={styles.social}>
         { socialLinks.map(socialLink => {
           return (
