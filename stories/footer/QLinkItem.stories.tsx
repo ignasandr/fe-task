@@ -1,33 +1,39 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Layout from '../decorators/layout';
-import styles from './Footer.module.scss';
+import Layout from '../../components/decorators/layout';
+import styles from '../../components/footer/Footer.module.scss';
 
-import ContactItem from './ContactItem';
+
+import QLinkItem from '../../components/footer/QLinkItem';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
-const meta: Meta<typeof ContactItem> = {
-  title: 'Footer/Contacts/ContactItem',
-  component: ContactItem,
+const meta: Meta<typeof QLinkItem> = {
+  title: 'Footer/QLinks/QLinkItem',
+  component: QLinkItem,
   decorators: [
     (Story) => 
     <Layout>
       <div className={styles.footer}>
         <div className={styles.content}>
-          <div className={styles.contact}>
+          <div className={styles.qlinks}>
             <Story />
           </div>
         </div>
       </div>
     </Layout>
   ],
+  args: {
+    accent: false
+  }
   // argTypes: {
   // }
 };
 
 export default meta;
-type Story = StoryObj<typeof ContactItem>;
+type Story = StoryObj<typeof QLinkItem>;
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default: Story = {
-  args: {},
+  args: {
+    label: "default item"
+  },
 };

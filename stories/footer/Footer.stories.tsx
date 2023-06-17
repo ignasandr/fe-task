@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Layout from '../decorators/layout';
+import Layout from '../../components/decorators/layout';
 
-import Footer from './Footer';
+import Footer from '../../components/footer/Footer';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 const meta: Meta<typeof Footer> = {

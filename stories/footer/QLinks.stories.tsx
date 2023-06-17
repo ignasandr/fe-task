@@ -1,13 +1,14 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Layout from '../decorators/layout';
-import styles from './Footer.module.scss';
+import Layout from '../../components/decorators/layout';
+import styles from '../../components/footer/Footer.module.scss';
 
-import About from './About';
+import QLinks from '../../components/footer/QLinks';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
-const meta: Meta<typeof About> = {
-  title: 'Footer/About/About',
-  component: About,
+const meta: Meta<typeof QLinks> = {
+  title: 'Footer/QLinks/QLinks',
+  component: QLinks,
+  tags: ['autodocs'],
   decorators: [
     (Story) => 
     <Layout>
@@ -23,7 +24,7 @@ const meta: Meta<typeof About> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof About>;
+type Story = StoryObj<typeof QLinks>;
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default: Story = {
