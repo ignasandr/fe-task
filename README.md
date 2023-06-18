@@ -1,5 +1,7 @@
 This task was created with [Next.js](https://nextjs.org/) and [Storybook.js](https://storybookjs.org)
 
+Demo: https://fe-task-steel.vercel.app/
+
 ## Run app
 
 ```bash
@@ -10,8 +12,7 @@ yarn dev
 pnpm dev
 ```
 
-
-## Run storybook (separate components with documentation)
+## Run storybook (separate components)
 
 ```bash
 npm run storybook
