@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import Layout from "../decorators/layout";
-import styles from "./Referrals.module.scss";
+import Layout from "../../components/decorators/layout";
+import styles from "../../components/referals/Referrals.module.scss";
 
-import ReferralsInput from "./ReferralsInput";
+import ReferralsInput from "../../components/referals/ReferralsInput";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 const meta: Meta<typeof ReferralsInput> = {

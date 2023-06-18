@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import Layout from "../decorators/layout";
+import Layout from "../../components/decorators/layout";
 
-import Referrals from "./Referrals";
+import Header from "../../components/header/Header";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
-const meta: Meta<typeof Referrals> = {
-  title: "Referals/Referrals",
-  component: Referrals,
+const meta: Meta<typeof Header> = {
+  title: "Header/Header",
+  component: Header,
   parameters: {
     layout: "fullscreen",
   },
@@ -20,7 +20,7 @@ const meta: Meta<typeof Referrals> = {
 };
 
 export default meta;
-type Story = StoryObj<typeof Referrals>;
+type Story = StoryObj<typeof Header>;
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default: Story = {

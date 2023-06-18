@@ -1,20 +1,21 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import Layout from '../decorators/layout';
+import type { Meta, StoryObj } from "@storybook/react";
+import Layout from "../../components/decorators/layout";
 
-import ReferralsForm from './ReferralsForm';
+import ReferralsForm from "../../components/referals/ReferralsForm";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 const meta: Meta<typeof ReferralsForm> = {
-  title: 'Referals/ReferralsForm',
+  title: "Referals/ReferralsForm",
   component: ReferralsForm,
   parameters: {
-    layout: 'fullscreen'
+    layout: "fullscreen",
   },
   decorators: [
-    (Story) => 
-    <Layout>
+    (Story) => (
+      <Layout>
         <Story />
-    </Layout>
+      </Layout>
+    ),
   ],
   // argTypes: {
   // }

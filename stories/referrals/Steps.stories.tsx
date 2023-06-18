@@ -1,17 +1,18 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import Layout from '../decorators/layout';
+import type { Meta, StoryObj } from "@storybook/react";
+import Layout from "../../components/decorators/layout";
 
-import Steps from './Steps';
+import Steps from "../../components/referals/Steps";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 const meta: Meta<typeof Steps> = {
-  title: 'Referals/Steps',
+  title: "Referals/Steps",
   component: Steps,
   decorators: [
-    (Story) => 
-    <Layout>
+    (Story) => (
+      <Layout>
         <Story />
-    </Layout>
+      </Layout>
+    ),
   ],
   // argTypes: {
   // }
