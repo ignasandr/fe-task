@@ -5,6 +5,7 @@
 
   .item {
     display: flex;
+    flex-direction: row;
     align-items: center;
     gap: 3.5rem;
 
@@ -43,18 +44,26 @@
 }
 
 @media (max-width: 480px) {
-  .item {
-    gap: 1.5rem;
-
-    &.right {
+  .steps {
+    .item {
+      gap: 1.5rem;
       flex-direction: column;
-      justify-content: center;
-    }
 
-    &.left {
-      flex-direction: column;
-      justify-content: center;
+      &.right {
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      &.left {
+        flex-direction: column;
+        justify-content: center;
+      }
     }
+  }
+
+  .right .left {
+    flex-direction: column;
+    justify-content: center;
   }
 
   .text {
