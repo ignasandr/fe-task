@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid var(--txt-0);
+  padding: 1rem 0;
+}
+
+.content {
+  width: var(--content-width);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.burger {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 0.75rem 0.5rem 0.75rem 1rem;
+    border-bottom: none;
+  }
+
+  .burger {
+    display: inline-block;
+    cursor: pointer;
+    padding-top: 0.25rem;
+  }
+}

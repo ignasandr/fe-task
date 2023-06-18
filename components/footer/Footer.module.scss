@@ -1,130 +1,125 @@
 .footer {
-    display: flex;
-    justify-content: center;
-    background-color: var(--bg-4);
-    width: 100%;
-    padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg-4);
+  width: 100%;
+  padding: 4rem 0;
 
-    .content {
-        width: var(--content-width);
-        display: grid;
-        grid-template-areas: 
-            'about qlinks contact'
-            'copyright qlinks social';
-            
-            .about {
-                grid-area: about;
-                display: flex;
-                height: 100%;
-                width: 34rem;
-                flex-direction: column;
-                justify-content: space-between;
+  .content {
+    width: var(--content-width);
+    display: grid;
+    grid-template-areas:
+      "about qlinks contact"
+      "copyright qlinks social";
 
-                .desc {
-                    margin-top: 1rem;
-                }
-            }     
-            
-            .section {
-                h4 {
-                    text-transform: uppercase;
-                    font-weight: bold;
-                    font-size: 1.25rem;
-                    margin-bottom: 1.5rem;
-                }
-            }
-            
-            .qlinks {
-                display: flex;
-                flex-direction: column;
-                gap: 1rem;
-                width: fit-content;
+    .about {
+      grid-area: about;
+      display: flex;
+      height: 100%;
+      width: 34rem;
+      flex-direction: column;
+      justify-content: space-between;
 
-                .item {
-                    text-transform: capitalize;
-                    transition: color 0.3s ease-in-out;
-                }
-
-                .item:hover {
-                    color: var(--txt-2);
-                }
-                
-                .accent {
-                    color: var(--txt-2);
-                }
-            }
-            
-            .contact {
-
-                .item {
-                    display: flex;
-                    align-items: center;
-                    gap: 1rem;
-                }
-            }
-            
-            .social {
-                display: flex;
-                flex-direction: row;
-                gap: 0.5rem;
-
-                .icon {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    background: var(--txt-2);
-                    width: 2rem;
-                    height: 2rem;
-                    border: 1px solid var(--txt-0);
-                    border-radius: 8px;
-                    cursor: pointer;
-                }
-            }
-
-            .copyright {
-                grid-area: copyright;
-                align-self: end;
-                color: var(--txt-3);
-            }
+      .desc {
+        margin-top: 1rem;
+      }
     }
+
+    .section {
+      h4 {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    .qlinks {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: fit-content;
+
+      .item {
+        text-transform: capitalize;
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+          color: var(--txt-2);
+        }
+
+        &.accent {
+          color: var(--txt-2);
+        }
+      }
+    }
+
+    .contact {
+      .item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+    }
+
+    .social {
+      display: flex;
+      flex-direction: row;
+      gap: 0.5rem;
+
+      .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--txt-2);
+        width: 2rem;
+        height: 2rem;
+        border: 1px solid var(--txt-0);
+        border-radius: 8px;
+        cursor: pointer;
+      }
+    }
+
+    .copyright {
+      grid-area: copyright;
+      align-self: end;
+      color: var(--txt-3);
+    }
+  }
 }
-
-
 
 @media (max-width: 480px) {
-    .footer {
-        padding: 4rem 2rem;
-        flex-direction: column;
-        width: 100%;
+  .footer {
+    padding: 4rem 2rem;
+    flex-direction: column;
+    width: 100%;
 
-        .content {
-            width: 100%;
-            flex-direction: column;
-            grid-template-areas: 
-                'about'
-                'qlinks'
-                'contact'
-                'social'
-                'copyright';
+    .content {
+      width: 100%;
+      flex-direction: column;
+      grid-template-areas:
+        "about"
+        "qlinks"
+        "contact"
+        "social"
+        "copyright";
 
-            .section {
-                margin: 1rem 0;
-                // padding: 0.25rem 0;
-                h4 {
-                    font-size: 1rem;
-                }
-            }
-        
-            .about {
-                width: 100%;
-                margin-bottom: 2rem;
-            }
-        
-            .copyright {
-                margin-top: 2rem;
-            }
+      .section {
+        margin: 1rem 0;
+        // padding: 0.25rem 0;
+        h4 {
+          font-size: 1rem;
         }
-    }
-}
+      }
 
-    
+      .about {
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+
+      .copyright {
+        margin-top: 2rem;
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import styles from "./Referrals.module.scss";
+import styles from "./ReferralsInput.module.scss";
 import Image from "next/image";
 import email from "../../public/assets/email.svg";
 import success from "../../public/assets/success.svg";
